@@ -1,0 +1,10 @@
+//remove first char(scalar value) from the given string, 
+  and let to variable
+//if consonant
+	//append the variable with ay
+	//concatenate the above variable from the given string with,
+	  '-' and the appended variable.
+	//ex: from string "first" to "irst-fay" 
+//if vowel
+	//add -hay to the end
+	//ex: from string "apple" to "apple-hay"
