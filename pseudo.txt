@@ -3,6 +3,10 @@
 
 //remove first char(scalar value) from the given string, 
   and let to variable                                     <ok>
+
+CONTINUE HERE!! 
+we need to check the first char if its a consonant or vowel!!
+
 //if consonant
 	//append the variable with ay
 	//concatenate the above variable from the given string with,
