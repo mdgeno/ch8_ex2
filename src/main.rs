@@ -1,12 +1,30 @@
+use std::io;
+
 fn main(){
 
-	let str_ex = String::from("example");
+	println!("Enter a text:");
+	let mut input = String::new();
+	io::stdin().read_line(&mut input).expect("enter correct input");
 
-	let first_char = str_ex.get(str_ex.len()-1..);
+	let first_char = match input.get(0){
+				Some(val) => val,
+				None(_) => _
+	};
+	
+	println!("return 1 or 2? {}", check(first_char));
 
-	match first_char{
-		Some(val) => println!("last char {val}"),
-		None => println!("char does not exist")
+//	let first_char = input.remove(0);
+
+}
+
+//????
+fn check(letter: char) -> i32{
+	match letter{
+		a => 2,
+		e => 2,	
+		i => 2,
+		o => 2,
+ 		u => 2,
+		_ => 1
 	}
-
 }

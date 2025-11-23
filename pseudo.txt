@@ -1,5 +1,8 @@
+//ask user to input a text to be converted into pig latin <ok>
+//test if the char method is by letters.                  <ok>
+
 //remove first char(scalar value) from the given string, 
-  and let to variable
+  and let to variable                                     <ok>
 //if consonant
 	//append the variable with ay
 	//concatenate the above variable from the given string with,
