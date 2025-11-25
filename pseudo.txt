@@ -4,8 +4,7 @@
 //remove first char(scalar value) from the given string, 
   and let to variable                                     <ok>
 
-CONTINUE HERE!! 
-we need to check the first char if its a consonant or vowel!!
+we need to check the first char if its a consonant or vowel!! <ok>
 
 //if consonant
 	//append the variable with ay
@@ -15,3 +14,9 @@ we need to check the first char if its a consonant or vowel!!
 //if vowel
 	//add -hay to the end
 	//ex: from string "apple" to "apple-hay"
+
+CONTINUE HERE!!
+
+//take in a sentence input, convert each word to pig latin
+	ex. What's your name?	At'swhay ouryay amenay?
+		

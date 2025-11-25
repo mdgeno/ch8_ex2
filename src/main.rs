@@ -6,25 +6,32 @@ fn main(){
 	let mut input = String::new();
 	io::stdin().read_line(&mut input).expect("enter correct input");
 
-	let first_char = match input.get(0){
-				Some(val) => val,
-				None(_) => _
+	match input.get(0..1){
+				Some(val) => check(val, input.trim()),
+				None => println!("no value")
 	};
-	
-	println!("return 1 or 2? {}", check(first_char));
-
-//	let first_char = input.remove(0);
 
 }
 
-//????
-fn check(letter: char) -> i32{
-	match letter{
-		a => 2,
-		e => 2,	
-		i => 2,
-		o => 2,
- 		u => 2,
-		_ => 1
+fn check(letter: &str, word: &str){
+	match letter.trim(){
+		"a" => run_vow(word),
+		"e" => run_vow(word),	
+		"i" => run_vow(word),
+		"o" => run_vow(word),
+ 		"u" => run_vow(word),
+		 _ => run_cons(word)
 	}
+}
+
+fn run_cons(word: &str){
+	let mut text = String::from(word);
+	let first_letter = text.remove(0);
+	let output = format!("{text}-{first_letter}ay");
+	println!("the pig latin of the input {word} is {output}");
+}
+
+fn run_vow(word: &str){
+	let output = format!("{word}-hay");
+	println!("the pig latin of the input {word} is {output}");
 }
