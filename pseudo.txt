@@ -19,4 +19,7 @@ CONTINUE HERE!!
 
 //take in a sentence input, convert each word to pig latin
 	ex. What's your name?	At'swhay ouryay amenay?
+	//take input
+	//split white space
+	//
 		

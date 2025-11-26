@@ -6,10 +6,14 @@ fn main(){
 	let mut input = String::new();
 	io::stdin().read_line(&mut input).expect("enter correct input");
 
-	match input.get(0..1){
-				Some(val) => check(val, input.trim()),
+	for word in input.split_whitespace(){
+
+		match word.get(0..1){
+				Some(val) => check(val, word.trim()),
 				None => println!("no value")
-	};
+		};
+
+	}
 
 }
 
@@ -28,10 +32,10 @@ fn run_cons(word: &str){
 	let mut text = String::from(word);
 	let first_letter = text.remove(0);
 	let output = format!("{text}-{first_letter}ay");
-	println!("the pig latin of the input {word} is {output}");
+	print!("{output} ");
 }
 
 fn run_vow(word: &str){
 	let output = format!("{word}-hay");
-	println!("the pig latin of the input {word} is {output}");
+	print!("{output} ");
 }
